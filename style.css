@@ -1,3 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
-    background-color: antiquewhite;
+    background-color: rgb(168, 20, 20);
+}
+
+h1{
+    color: aliceblue;
+    text-align: center;
+    margin: 50px;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner{
+    background-color: aqua;
+    height: 400px;
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input{
+    height: 50px;
+    width: 400px;
+    font-size: 20px;
+}
+
+form button{
+    width: 100px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+.caixa_botoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botoes button{
+    background-color:aliceblue;
+    width: 120px;
+    height: 75px;
+    margin: 20px;
 }

@@ -14,21 +14,31 @@
       echo "<p>Produto cadastrado com sucesso!!</p>";
     }
     ?>
+    <div class="box">
+      <div class="conteiner">
+        <form action="db.php" method="post">
+    
+          <input type="hidden" name="acao" value="cadastrar">
+    
+          <label for="nome">Nome do produto</label><br>
+          <input type="text" id="nome" name="nome_produto" required/><br>
+    
+          <label for="unidade">Unidade</label><br>
+          <input type="text" name="unidade_produto" id="unidade" required/><br>
+    
+          <label for="quantidade">Quantidade</label><br>
+          <input type="number" name="quantidade_produto" id="quantidade" required/><br>
+    
+          <button type="submit">click me</button>
+        </form>
+      </div>
+    </div>
 
-    <form action="db.php" method="post">
-
-      <input type="hidden" name="acao" value="cadastrar">
-
-      <label for="nome">Nome do produto</label>
-      <input type="text" id="nome" name="nome_produto" required/><br>
-
-      <label for="unidade">Unidade</label>
-      <input type="text" name="unidade_produto" id="unidade" required/><br>
-
-      <label for="quantidade">Quantidade</label>
-      <input type="number" name="quantidade_produto" id="quantidade" required/>
-
-      <button type="submit">Adicionar</button>
-    </form>
+    <div class="caixa_botoes">
+      <div class="botoes">
+        <button onclick="window.location.href='entrada.php'">entrada</button>
+        <button>saida</button>
+      </div>
+    </div>
   </body>
 </html>
